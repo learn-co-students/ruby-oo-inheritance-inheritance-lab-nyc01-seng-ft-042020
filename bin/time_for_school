@@ -12,9 +12,26 @@ avi = Teacher.new
 avi.first_name = "Avi"
 avi.last_name = "Flombaum"
 
+jim = User.new 
+jim.first_name = "Jim"
+jim.last_name = "Last"
+
 
 some_knowledge = avi.teach 
 
 steve.learn(some_knowledge)
 
 puts "Steve just learned this important knowledge: '#{steve.knowledge.first}' from Avi"
+
+# We've set up an executable file for you in bin/time_for_school. Check out the code there and run the 
+# file with ruby bin/time_for_school in your terminal. Get a feel for how the code we wrote works and 
+# what methods are available to our student and teacher instances thanks to inheritance.
+
+# Play around with it a bit more by trying out the following in this file:
+
+# We have a new user, Jim, who is just here to audit a few classes. He is neither a teacher nor a 
+# student. Create a local variable, jim, and point it equal to an instance of the User class. Then, 
+# give jim a first and last name. What happens when you try to call #learn on jim?
+# Continue to operate on our student, steve. Have avi teach him some more important knowledge.
+# Create a new student and have that student learn a few things from avi as well.
+# Then, puts out the existing knowledge of each student.
