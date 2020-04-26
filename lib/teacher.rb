@@ -4,7 +4,10 @@ class Teacher < User
 
   def teach 
     KNOWLEDGE.sample
-  end
+    end
   
   
 end
+
+knowledge = [["javascript async"], ["programming is hard"]]
+
