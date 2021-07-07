@@ -4,6 +4,16 @@ require_relative "../lib/user.rb"
 require_relative "../lib/teacher.rb"
 require_relative "../lib/student.rb"
 
+jim = User.new
+jim.first_name = 'Jim'
+jim.last_name = 'Henson'
+
+# jim.learn will error because #learn is a Student specific method
+
+jon = Student.new
+jon.first_name = 'Jon'
+jon.last_name = 'Snow'
+
 steve = Student.new
 steve.first_name = "Steve"
 steve.last_name = "Jobs"
@@ -17,4 +27,7 @@ some_knowledge = avi.teach
 
 steve.learn(some_knowledge)
 
+jon.learn(avi.teach)
+
 puts "Steve just learned this important knowledge: '#{steve.knowledge.first}' from Avi"
+puts "Jon just learned this important knowledge: '#{jon.knowledge.first}' from Avi"
